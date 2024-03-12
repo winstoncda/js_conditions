@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person = 18;
+      let inscription = true;
+      let cotisation;
+      if (person > 17 && person < 65 && inscription === true) {
+        cotisation = 10;
+        // } else if (person > 17 && !inscription) {
+      } else if (person > 17 && inscription === false) {
+        // !condition est égal à son contraire
+        cotisation = 15;
+      } else if (person < 18 && inscription) {
+        cotisation = 5;
+      } else if (person >= 65) {
+        cotisation = 0;
+      } else {
+        cotisation = 8;
+      }
+      console.log(cotisation);
+    </script>
+  </body>
+</html>
